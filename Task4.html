@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Manager Examples</title>
+</head>
+<body>
+
+  <h1>Task 1: Paragraph Color Change on Events</h1>
+  <p id="eventParagraph">Click Me!</p>
+
+  <script>
+    var paragraph = document.getElementById("eventParagraph");
+
+    // Event listeners for paragraph (same as before)
+    paragraph.addEventListener("click", function() {
+      this.style.backgroundColor = "yellow";
+    });
+
+    paragraph.addEventListener("dblclick", function() {
+      this.style.backgroundColor = "blue";
+    });
+
+    paragraph.addEventListener("mouseover", function() {
+      this.style.backgroundColor = "red";
+    });
+
+    paragraph.addEventListener("mouseout", function() {
+      this.style.backgroundColor = "green";
+    });
+  </script>
+
+  <h1>Task 2: Text Field Events</h1>
+  <input type="text" id="textField" placeholder="Enter text here">
+
+
+     <script src="Task 4.js" defer></script> <!-- Include your JavaScript file -->
+
+
+</body>
+</html>
